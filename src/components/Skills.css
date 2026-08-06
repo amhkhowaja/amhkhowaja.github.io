@@ -1,0 +1,25 @@
+.skills-category {
+  margin-bottom: var(--space-lg);
+}
+
+.skills-category h4 {
+  margin-bottom: var(--space-sm);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+}
+
+.skill-tag {
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: var(--font-size-xs);
+  border: 1px solid var(--color-border);
+}

@@ -1,0 +1,51 @@
+:root {
+  /* Colors */
+  --color-primary: #f97316;
+  --color-primary-hover: #ea580c;
+  --color-background: #0d1117;
+  --color-surface: #161b22;
+  --color-sidebar: #010409;
+  --color-text: #c9d1d9;
+  --color-text-secondary: #8b949e;
+  --color-text-light: #f0f6fc;
+  --color-border: #30363d;
+  --color-tag-bg: #3d1d00;
+  --color-tag-text: #fb923c;
+  --color-success: #3fb950;
+  --color-inline-code-bg: #1c2128;
+
+  /* Typography */
+  --font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+  --font-family-body: 'Inter', -apple-system, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 15px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+}
