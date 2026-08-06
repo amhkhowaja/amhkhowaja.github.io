@@ -5,7 +5,7 @@ export const cv = {
   "name": "AADARSH MEHDI",
   "title": "Experienced Software Developer | Cloud-Native Platforms | AI/ML Systems",
   "location": "Budapest, Hungary",
-  "phone": "+36205176258",
+  "phone": "",
   "email": "aadarshofficial110@gmail.com",
   "linkedin": "https://linkedin.com/in/aadarsh-mehdi-73754b13b",
   "github": "https://github.com/amhkhowaja",

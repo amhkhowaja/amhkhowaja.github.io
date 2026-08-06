@@ -60,10 +60,6 @@ def parse_markdown(content: str) -> dict:
         email_match = re.search(r'[\w.+-]+@[\w-]+\.[\w.]+', contact_line)
         if email_match:
             cv["email"] = email_match.group()
-        # Extract phone
-        phone_match = re.search(r'\+[\d]+', contact_line)
-        if phone_match:
-            cv["phone"] = phone_match.group()
         # Extract location
         parts = contact_line.split("|")
         if parts:
