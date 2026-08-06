@@ -1,0 +1,150 @@
+.project-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.project-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  background: var(--bg-raised);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-head h3 {
+  font-size: 19px;
+}
+
+.status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-live {
+  color: var(--online);
+  border: 1px solid rgba(95, 209, 163, 0.35);
+}
+
+.status-wip {
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+
+.project-desc {
+  color: var(--ink-dim);
+  font-size: 14.5px;
+  margin-top: 10px;
+  max-width: 60ch;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.project-tags span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.project-tags span::before {
+  content: '#';
+  color: var(--accent-dim);
+}
+
+.project-repo {
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.repo-link {
+  color: var(--ink-dim);
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.repo-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.github-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.repo-verb {
+  color: var(--online);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-green {
+  background: var(--online);
+  box-shadow: 0 0 0 3px rgba(95, 209, 163, 0.15);
+}
+
+.dot-red {
+  background: #f87171;
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.15);
+}
+
+.status-code {
+  font-weight: 600;
+}
+
+.code-green {
+  color: var(--online);
+}
+
+.code-red {
+  color: #f87171;
+}
+
+.repo-private {
+  color: var(--ink-faint);
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}

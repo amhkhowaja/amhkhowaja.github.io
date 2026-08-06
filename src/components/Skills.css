@@ -1,25 +1,21 @@
-.skills-category {
-  margin-bottom: var(--space-lg);
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 24px;
 }
 
 .skills-category h4 {
-  margin-bottom: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.skills-list {
+.stack-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-sm);
-  list-style: none;
-  padding: 0;
-}
-
-.skill-tag {
-  background: var(--color-tag-bg);
-  color: var(--color-tag-text);
-  padding: var(--space-xs) var(--space-sm);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-family);
-  font-size: var(--font-size-xs);
-  border: 1px solid var(--color-border);
+  gap: 10px;
 }

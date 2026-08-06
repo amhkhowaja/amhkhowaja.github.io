@@ -1,0 +1,13 @@
+.about-body {
+  max-width: 62ch;
+  color: var(--ink-dim);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}

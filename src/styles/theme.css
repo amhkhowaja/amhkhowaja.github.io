@@ -1,31 +1,23 @@
 :root {
-  /* Colors */
-  --color-primary: #f97316;
-  --color-primary-hover: #ea580c;
-  --color-background: #0d1117;
-  --color-surface: #161b22;
-  --color-sidebar: #010409;
-  --color-text: #c9d1d9;
-  --color-text-secondary: #8b949e;
-  --color-text-light: #f0f6fc;
-  --color-border: #30363d;
-  --color-tag-bg: #3d1d00;
-  --color-tag-text: #fb923c;
-  --color-success: #3fb950;
-  --color-inline-code-bg: #1c2128;
+  /* Colors — from template */
+  --bg: #0b1a26;
+  --bg-raised: #0f2233;
+  --grid-line: rgba(232, 163, 61, 0.07);
+  --ink: #eef2f4;
+  --ink-dim: #9fb2bd;
+  --ink-faint: #62798a;
+  --accent: #e8a33d;
+  --accent-dim: #b57e2f;
+  --online: #5fd1a3;
+  --border: rgba(232, 163, 61, 0.18);
 
   /* Typography */
-  --font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
-  --font-family-body: 'Inter', -apple-system, sans-serif;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-base: 15px;
-  --font-size-lg: 18px;
-  --font-size-xl: 24px;
-  --font-size-2xl: 32px;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout */
+  --max-w: 960px;
 
   /* Spacing */
   --space-xs: 4px;
@@ -37,13 +29,8 @@
 
   /* Border radius */
   --radius-sm: 4px;
-  --radius-md: 6px;
+  --radius-md: 8px;
   --radius-lg: 12px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
 
   /* Transitions */
   --transition-fast: 150ms ease;

@@ -1,24 +1,28 @@
-import SectionTitle from "./SectionTitle";
+import { cv } from '../data/cv';
 import './Skills.css';
 
-interface Prop {
-    skills: Record<string, string[]>;
-}
+function Skills() {
+  return (
+    <section id="skills">
+      <div className="wrap">
+        <p className="route-label" data-aos="fade-up">/skills</p>
+        <h2 data-aos="fade-up" data-aos-delay="80">Technical stack</h2>
 
-function Skills({ skills }: Prop){
-    return (
-        <section id="skills">
-            <SectionTitle title="Technical Skills" />
-            {Object.entries(skills).map(([category, items]) => (
-                <div key={category} className="skills-category">
-                    <h4>{category}</h4>
-                    <ul className="skills-list">
-                        {items.map((skill, i) => <li key={i} className="skill-tag">{skill}</li>)}
-                    </ul>
-                </div>
-            ))}
-        </section>
-    );
+        <div className="skills-grid" data-aos="fade-up" data-aos-delay="120">
+          {Object.entries(cv.skills).map(([category, items]) => (
+            <div key={category} className="skills-category">
+              <h4>{category}</h4>
+              <div className="stack-tags">
+                {items.map((skill, i) => (
+                  <span key={i} className="tag">{skill}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Skills;
