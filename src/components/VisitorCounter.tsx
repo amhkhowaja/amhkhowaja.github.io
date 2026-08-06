@@ -6,9 +6,9 @@ function VisitorCounter() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch('https://api.countapi.xyz/hit/amhkhowaja-github-io/visits')
+    fetch('https://api.counterapi.dev/v1/amhkhowaja-github-io/visits/up')
       .then(res => res.json())
-      .then(data => setCount(data.value))
+      .then(data => setCount(data.count))
       .catch(() => setCount(null));
   }, []);
 
