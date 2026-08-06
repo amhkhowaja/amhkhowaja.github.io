@@ -22,14 +22,14 @@ function VisitorCounter() {
             <div className="stats-number">{count !== null ? count : '...'}</div>
             <p className="stats-label">visitors</p>
           </div>
-          <div className="stats-card">
+          <a href="#projects" className="stats-card stats-card-link">
             <div className="stats-number">{cv.projects.length}</div>
             <p className="stats-label">projects</p>
-          </div>
-          <div className="stats-card">
+          </a>
+          <a href="#experience" className="stats-card stats-card-link">
             <div className="stats-number">4+</div>
-            <p className="stats-label">years exp</p>
-          </div>
+            <p className="stats-label">years experience</p>
+          </a>
         </div>
       </div>
     </section>

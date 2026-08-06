@@ -20,6 +20,12 @@
   transform: translateY(-2px);
 }
 
+.stats-card-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .stats-number {
   font-family: var(--font-display);
   font-size: 42px;
