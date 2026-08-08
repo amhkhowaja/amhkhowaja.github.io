@@ -13,6 +13,7 @@ function Education() {
             <div className="education-org">Eötvös Loránd University (ELTE), Budapest</div>
             <div className="education-period">2020 – 2023</div>
             <p className="education-thesis">Thesis: "Adaptive, Context-Aware AI Conversational Agent for IoT Service Portal"</p>
+            <a href="/thesis" className="education-link">View Thesis →</a>
           </div>
         </div>
       </div>

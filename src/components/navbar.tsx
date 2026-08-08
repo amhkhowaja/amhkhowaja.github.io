@@ -1,23 +1,23 @@
 import './navbar.css'
 
 const links = [
-  { path: '/about', label: 'About' },
-  { path: '/skills', label: 'Skills' },
-  { path: '/experience', label: 'Experience' },
-  { path: '/projects', label: 'Projects' },
-  { path: '/contact', label: 'Contact' },
+  { path: '/about', label: 'About', anchor: true },
+  { path: '/skills', label: 'Skills', anchor: true },
+  { path: '/experience', label: 'Experience', anchor: true },
+  { path: '/projects', label: 'Projects', anchor: true },
+  { path: '/contact', label: 'Contact', anchor: true },
 ]
 
 function Navbar() {
   return (
     <header className="nav">
       <div className="wrap nav-inner">
-        <a href="#top" className="nav-brand">
+        <a href="/" className="nav-brand">
           amh<span className="nav-brand-dot">.</span>
         </a>
         <nav className="nav-links">
           {links.map((l) => (
-            <a key={l.path} href={`#${l.path.slice(1)}`}>
+            <a key={l.path} href={l.anchor ? `#${l.path.slice(1)}` : l.path}>
               <span className="nav-verb">GET</span> {l.path}
             </a>
           ))}

@@ -18,6 +18,7 @@ export const cv = {
       "Kotlin",
       "C++",
       "JavaScript",
+      "TypeScript",
       "Bash",
       "PowerShell"
     ],
@@ -37,9 +38,9 @@ export const cv = {
       "React",
       "Streamlit",
       "Gradio",
-      "(HTML",
+      "HTML",
       "CSS",
-      "Bootstrap)"
+      "Bootstrap"
     ],
     "Web Frameworks": [
       "Flask",
@@ -47,9 +48,7 @@ export const cv = {
       "Spring Boot"
     ],
     "Cloud & DevOps": [
-      "AWS (EKS",
-      "IAM",
-      "S3)",
+      "AWS (EKS, IAM, S3)",
       "GCP (GKE)",
       "Kubernetes",
       "Docker",

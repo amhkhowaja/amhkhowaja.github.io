@@ -18,6 +18,9 @@ function About() {
             <span key={s} className="tag">{s}</span>
           ))}
         </div>
+        <div data-aos="fade-up" data-aos-delay="200" style={{ marginTop: '24px' }}>
+          <a href="/cv" className="btn btn-ghost">View CV →</a>
+        </div>
       </div>
     </section>
   );

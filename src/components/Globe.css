@@ -1,0 +1,27 @@
+.globe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 80px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.globe-marker {
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.globe-marker-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-dim);
+}
+
+@media (max-width: 900px) {
+  .globe-container {
+    position: static;
+    margin: 20px auto;
+  }
+}

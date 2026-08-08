@@ -1,0 +1,119 @@
+.pdf-page {
+  height: 100vh;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pdf-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(11, 26, 38, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.pdf-header h2 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--ink);
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.pdf-back {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-dim);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.pdf-back:hover {
+  color: var(--accent);
+}
+
+.pdf-download-btn {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background var(--transition-fast);
+}
+
+.pdf-download-btn:hover {
+  background: var(--accent-dim);
+}
+
+.pdf-notice {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-faint);
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.pdf-subtitle {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ink-dim);
+  font-style: italic;
+  text-align: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.pdf-viewer {
+  flex: 1;
+}
+
+.pdf-viewer iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.thesis-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  cursor: default;
+  pointer-events: none;
+}
+
+.thesis-viewer {
+  position: relative;
+}
+
+.thesis-viewer embed {
+  pointer-events: auto;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .pdf-viewer {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+
+  .pdf-viewer iframe,
+  .pdf-viewer embed {
+    min-height: 80vh;
+  }
+}

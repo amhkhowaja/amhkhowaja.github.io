@@ -135,9 +135,32 @@ def parse_skills(lines: list) -> dict:
             match = re.match(r'- \*\*(.+?):\*\*\s*(.+)', line)
             if match:
                 category = match.group(1).strip()
-                items = [s.strip() for s in match.group(2).split(",")]
+                # Split on commas but not inside parentheses
+                items = split_outside_parens(match.group(2))
                 skills[category] = items
     return skills
+
+
+def split_outside_parens(text: str) -> list:
+    """Split on commas that are not inside parentheses."""
+    result = []
+    current = ""
+    depth = 0
+    for char in text:
+        if char == '(':
+            depth += 1
+            current += char
+        elif char == ')':
+            depth -= 1
+            current += char
+        elif char == ',' and depth == 0:
+            result.append(current.strip())
+            current = ""
+        else:
+            current += char
+    if current.strip():
+        result.append(current.strip())
+    return result
 
 
 def parse_experience(lines: list) -> list:

@@ -32,7 +32,26 @@
 .hero-cta {
   display: flex;
   gap: 12px;
+  align-items: center;
   margin-top: 32px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 16px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.hero-socials a {
+  color: var(--ink-dim);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+  display: flex;
+}
+
+.hero-socials a:hover {
+  color: var(--accent);
 }
 
 /* Photo styles */
