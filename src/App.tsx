@@ -14,6 +14,7 @@ import Projects from './components/Projects';
 import GitHubActivity from './components/GitHubActivity';
 import Contact from './components/Contact';
 import CursorGlow from './components/CursorGlow';
+import VisitorCounter from './components/VisitorCounter';
 import CvPage from './components/CvPage';
 import ThesisPage from './components/ThesisPage';
 
@@ -24,6 +25,7 @@ function HomePage() {
     <>
       <Navbar />
       <Hero />
+      <VisitorCounter />
       <About />
       <Experience />
       <Skills />

@@ -6,20 +6,25 @@ function VisitorCounter() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch('https://api.counterapi.dev/v1/amhkhowaja-github-io/visits/up')
+    // Fetch visitor count from GoatCounter API
+    fetch('https://amhkhowaja.goatcounter.com/counter//amhkhowaja.github.io.json')
       .then(res => res.json())
       .then(data => setCount(data.count))
-      .catch(() => setCount(null));
+      .catch(() => {
+        // Fallback: try the total endpoint
+        fetch('https://amhkhowaja.goatcounter.com/counter/TOTAL.json')
+          .then(res => res.json())
+          .then(data => setCount(data.count))
+          .catch(() => setCount(null));
+      });
   }, []);
 
   return (
     <section id="stats">
       <div className="wrap">
-        <p className="route-label" data-aos="fade-up">/stats</p>
-        <h2 data-aos="fade-up" data-aos-delay="80">At a glance</h2>
         <div className="stats-grid" data-aos="fade-up" data-aos-delay="120">
           <div className="stats-card">
-            <div className="stats-number">{count !== null ? count : '...'}</div>
+            <div className="stats-number">{count !== null ? count : '—'}</div>
             <p className="stats-label">visitors</p>
           </div>
           <a href="#projects" className="stats-card stats-card-link">
