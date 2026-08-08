@@ -7,16 +7,10 @@ function VisitorCounter() {
 
   useEffect(() => {
     // Fetch visitor count from GoatCounter API
-    fetch('https://amhkhowaja.goatcounter.com/counter//amhkhowaja.github.io.json')
+    fetch('https://amhkhowaja.goatcounter.com/counter/%2F.json')
       .then(res => res.json())
-      .then(data => setCount(data.count))
-      .catch(() => {
-        // Fallback: try the total endpoint
-        fetch('https://amhkhowaja.goatcounter.com/counter/TOTAL.json')
-          .then(res => res.json())
-          .then(data => setCount(data.count))
-          .catch(() => setCount(null));
-      });
+      .then(data => setCount(parseInt(data.count)))
+      .catch(() => setCount(null));
   }, []);
 
   return (
