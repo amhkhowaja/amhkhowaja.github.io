@@ -10,6 +10,7 @@ import {
   SiLangchaincorporate, SiKeycloak, SiKeras, SiInfluxdb, SiGradio, SiEtcd,
   SiGooglecloud, SiRobotframework, SiApacheairflow,
   SiVictoriametrics, SiCrewai, SiRasa, SiHtml5, SiTypescript, SiCss, SiBootstrap,
+  SiTerraform,
 } from 'react-icons/si';
 import { FaJava, FaAws } from 'react-icons/fa';
 import { VscTerminalPowershell } from 'react-icons/vsc';
@@ -59,7 +60,8 @@ const iconMap: Record<string, { icon: any; color: string }> = {
   'Spring Boot': { icon: SiSpringboot, color: '#6DB33F' },
 
   // Cloud & DevOps
-  'AWS (EKS, IAM, S3)': { icon: FaAws, color: '#FF9900' },
+  'AWS (EC2, EKS, IAM, S3, Lambda, CloudWatch, SQS)': { icon: FaAws, color: '#FF9900' },
+  'Terraform': { icon: SiTerraform, color: '#7B42BC' },
   'GCP (GKE)': { icon: SiGooglecloud, color: '#4285F4' },
   'Kubernetes': { icon: SiKubernetes, color: '#326CE5' },
   'Docker': { icon: SiDocker, color: '#2496ED' },

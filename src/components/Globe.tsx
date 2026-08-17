@@ -11,6 +11,7 @@ import {
   SiLangchaincorporate, SiKeycloak, SiKeras, SiInfluxdb, SiGradio, SiEtcd,
   SiGooglecloud, SiRobotframework, SiApacheairflow,
   SiVictoriametrics, SiCrewai, SiRasa, SiHtml5, SiTypescript, SiCss, SiBootstrap,
+  SiTerraform,
 } from 'react-icons/si';
 import { FaJava, FaAws } from 'react-icons/fa';
 import { VscTerminalPowershell } from 'react-icons/vsc';
@@ -47,7 +48,8 @@ const skillRegistry: Record<string, { icon: any; color: string; group: string }>
   'Flask': { icon: SiFlask, color: '#FFFFFF', group: 'backend' },
   'FastAPI': { icon: SiFastapi, color: '#009688', group: 'backend' },
   'Spring Boot': { icon: SiSpringboot, color: '#6DB33F', group: 'backend' },
-  'AWS (EKS, IAM, S3)': { icon: FaAws, color: '#FF9900', group: 'infra' },
+  'AWS (EC2, EKS, IAM, S3, Lambda, CloudWatch, SQS)': { icon: FaAws, color: '#FF9900', group: 'infra' },
+  'Terraform': { icon: SiTerraform, color: '#7B42BC', group: 'infra' },
   'GCP (GKE)': { icon: SiGooglecloud, color: '#4285F4', group: 'infra' },
   'LangChain': { icon: SiLangchaincorporate, color: '#65B741', group: 'ai' },
   'LangFlow': { icon: SiLangchaincorporate, color: '#3B82F6', group: 'ai' },

@@ -48,8 +48,9 @@ export const cv = {
       "Spring Boot"
     ],
     "Cloud & DevOps": [
-      "AWS (EKS, IAM, S3)",
+      "AWS (EC2, EKS, IAM, S3, Lambda, CloudWatch, SQS)",
       "GCP (GKE)",
+      "Terraform",
       "Kubernetes",
       "Docker",
       "Helm",
@@ -159,12 +160,16 @@ export const cv = {
   "education": "**B.Sc. in Computer Science** – Eötvös Loránd University (ELTE), Budapest (2020–2023) Thesis: \"Adaptive, Context-Aware AI Conversational Agent for IoT Service Portal\"",
   "projects": [
     {
+      "name": "Archloop.io",
+      "description": "AI-powered SaaS platform for project management across engineering domains. Multi-tenant, multi-domain architecture that generates system designs, integrates with Jira/GitHub/GitLab, and provides domain-specific simulation and planning tools. Built with FastAPI, React, Keycloak, Nango, Temporal, Stripe, LangChain, and Haystack, Supabase. Features agentic AI orchestration with automatic failure recovery."
+    },
+    {
       "name": "AI Auto Improver",
       "description": "Self-optimizing FastAPI microservice with automated prompt evolution, pairwise regression gates, multi-dimensional evaluation metrics, concurrent processing, provider-agnostic LLM orchestration, and containerized deployment. Tools: Python 3.12, FastAPI, Instructor, LiteLLM, Pydantic v2, SQLite, asyncio, Gradio, Docker, Mistral AI."
     },
     {
-      "name": "Build with Aadarsh",
-      "description": "AI-powered SaaS platform for project management across engineering domains. Multi-tenant, multi-domain architecture that generates system designs, integrates with Jira/GitHub/GitLab, and provides domain-specific simulation and planning tools. Built with FastAPI, React, Keycloak, Nango, Temporal, Stripe, LangChain, and Haystack. Features agentic AI orchestration with automatic failure recovery."
+      "name": "AWS ETL and ML pipeline Serverless",
+      "description": "Serverless pipeline for preprocessing car sale data provissioned from terraform for AWS and Floci.io(AWS emulator) , used AWS services Lambda, S3, CloudWatch, SQS. and for ML used HistGradientBoostingRegressor model from sklearn."
     },
     {
       "name": "Pay As You Go",
@@ -185,10 +190,6 @@ export const cv = {
     {
       "name": "Intelligent IoT Digital Assistant",
       "description": "NLP-based conversational agent using TensorFlow, RASA, MongoDB."
-    },
-    {
-      "name": "X-Ray Pneumonia Detection",
-      "description": "Deep learning model using TensorFlow and Keras."
     }
   ],
   "achievements": [
